@@ -1,0 +1,257 @@
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.image1{
+    width: 100%;
+    border-radius: 5px;
+}
+
+body{
+    background-color: whitesmoke;
+    padding-top: 80px;
+    height: 1000px;
+    padding-left: 80px;
+}
+
+.searchbox{
+    flex: 1;
+    height: 28px;
+    padding-left: 12px;
+    font-size: 13px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(102, 102, 102);
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    
+}
+.videotitle{
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+.videoauthor{
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 4px;
+}
+.videostatus{
+    font-size: 15px;
+    color: gray;
+}
+
+.logoContainer{
+    position: relative;
+    display: inline-block;
+}
+
+sup{
+    position: absolute;
+    top: 0;
+    right: 5;
+}
+
+.image3{
+    width: 40px;
+    border-radius: 80px;
+}
+.thumbnailrow{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.videoinfogrid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.videogrid{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+@media(max-width:800px){
+    .videogrid{
+        grid-template-columns: 1fr ;
+    }
+}
+.header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(173, 173, 173);
+    z-index: 1;
+}
+
+
+.left{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.middle{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 30px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+}
+.right{
+    align-items: center;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-shrink: 0;
+}
+.menu{
+    height: 30px;
+}
+
+.logo{
+    height: 25px;
+}
+.searchIcon{
+    width: 60px;
+    height: 32px;
+    margin-right: 10px;
+    margin-left: -1px;
+    border: 1px;
+    background-color: rgb(192, 189, 189);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.voiceIcon{
+    height: 35px;
+    width: 35px;
+    border-radius: 70px;
+    background-color: rgb(192, 189, 189);
+    border: 1px;
+}
+
+.video{
+    height: 20px;
+    
+}
+.notification{
+    height: 23px;
+}
+.notificationContainer{
+    position: relative;
+}
+
+.notificationCount{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: rgb(202, 28, 28);
+    color: white;
+    border-radius: 90px;
+    font-family: Arial;
+    font-size: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 9px;
+}
+.user{
+    height: 25px;
+    border-radius: 15px;
+}
+.apps{
+    height: 25px;
+}
+.sidebar{
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    top: 50px;
+    width: 70px;
+    position: fixed;
+    z-index: 200;
+    cursor: pointer;
+}
+
+.sidebarLink{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebarLink img{
+    height: 30px;
+}
+.sidebarLink:hover{
+    background-color: rgb(192, 192, 192);
+}
+.sidebarLink div{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.videotime{
+    background-color: black;
+    font-size: 16px;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    font-weight: 500;
+}
+
+.horizontalScroll{
+    display: flex;
+    padding-left: 70px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    top: 50px;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(173, 173, 173);
+    z-index: 1;
+
+}
+.horizontalScroll button{
+    padding: 5px;
+    margin-left: 15px;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+    cursor: pointer;
+    border-color: rgb(233,233,233);
+    border-style: solid;
+}
+
+.horizontalScroll button a{
+    text-decoration: none;
+    color: black;
+}
+
+.horizontalScroll button:hover{
+    background-color: rgb(206, 204, 204);
+}
